@@ -138,25 +138,212 @@
     </header>
 
     <main>
-
-        <!-- ===================================================== -->
+        
         <!-- HERO SECTION -->
-        <!-- ===================================================== -->
-        <section
-            class="h-screen bg-gradient-to-br from-red-900 via-red-800 to-orange-700"
-            aria-label="Hero Section"
-        >
-        </section>
 
+        <!-- ===================================================== -->
+
+        <section
+            class="relative w-full min-h-[40vh] bg-gradient-to-br from-red-900 via-red-800 to-red-900 overflow-hidden"
+            aria-labelledby="hero-heading"
+        >
+
+        <!-- Background Glow Effects -->
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-orange-500/20 blur-3xl rounded-full"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="absolute bottom-0 right-0 w-96 h-96 bg-orange-400/10 blur-3xl rounded-full"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16"
+        >
+
+            <div
+                class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+            >
+
+                <!-- ===================================================== -->
+                <!-- LEFT COLUMN - FOOD IMAGE -->
+                <!-- ===================================================== -->
+                <div class="relative order-2 lg:order-1">
+
+                    <!-- Decorative Accent -->
+                    <div
+                        class="absolute -top-4 -left-4 w-24 h-24 bg-orange-500 rounded-full blur-3xl opacity-40"
+                    ></div>
+
+                    <!-- Skeleton Loader -->
+                    <div
+                        class="animate-pulse rounded-[2rem] overflow-hidden shadow-2xl shadow-black/20 bg-white/10"
+                    >
+
+                        <img
+                            src="images/hero-pot.webp"
+                            alt="Large steaming pot of freshly prepared Nigerian food"
+                            loading="lazy"
+                            class="w-full h-[320px] md:h-[420px] object-cover rounded-[2rem]"
+                        />
+
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute bottom-5 left-5 bg-white backdrop-blur-md rounded-2xl px-4 py-3 shadow-2xl"
+                    >
+                        <p class="text-sm font-semibold text-gray-900">
+                            Freshly Cooked Daily
+                        </p>
+                        <p class="text-xs text-gray-500">
+                            Made when you order
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ===================================================== -->
+                <!-- RIGHT COLUMN - CONTENT -->
+                <!-- ===================================================== -->
+                <div
+                    class="order-1 lg:order-2 text-center lg:text-left"
+                >
+
+                    <!-- Trust Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-400/20 mb-6"
+                    >
+                        <span
+                            class="w-2 h-2 rounded-full bg-orange-500"
+                        ></span>
+
+                        <span
+                            class="text-orange-200 text-sm font-medium"
+                        >
+                            Delivering Across Enugu Metropolis
+                        </span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1
+                        id="hero-heading"
+                        class="text-white font-black leading-tight text-4xl sm:text-5xl lg:text-6xl"
+                    >
+                        Real Nigerian Meals,
+                        <span class="text-orange-400">
+                            Delivered Hot
+                        </span>
+                        To Your Doorstep.
+                    </h1>
+
+                    <!-- Supporting Text -->
+                    <p
+                        class="mt-6 text-lg text-red-100 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+                    >
+                        Skip the cooking, avoid the queues, and enjoy authentic
+                        home-cooked Nigerian favorites. From rich Egusi and
+                        Edikaikong to delicious Jollof Rice, Nkwobi and Grilled
+                        Fish, MamaPutOnline delivers comfort food wherever you are
+                        in Enugu.
+                    </p>
+
+                    <!-- Benefits -->
+                    <div
+                        class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start"
+                    >
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
+                        >
+                            Fast Delivery
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
+                        >
+                            Freshly Prepared
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
+                        >
+                            Affordable Meals
+                        </span>
+
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div
+                        class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                    >
+
+                        <!-- Primary CTA -->
+                        <a
+                            href="#menu"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-2xl shadow-2xl shadow-orange-900/40 transition-all duration-300 hover:-translate-y-1"
+                        >
+                            Order Food Now
+                        </a>
+
+                        <!-- Secondary CTA -->
+                        <a
+                            href="#categories"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-white font-semibold rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                        >
+                            Browse Menu
+                        </a>
+
+                    </div>
+
+                    <!-- Social Proof -->
+                    <div
+                        class="mt-8 flex flex-wrap items-center gap-6 justify-center lg:justify-start"
+                    >
+
+                        <div>
+                            <p class="text-2xl font-bold text-white">
+                                500+
+                            </p>
+                            <p class="text-sm text-red-200">
+                                Happy Customers
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-bold text-white">
+                                15+
+                            </p>
+                            <p class="text-sm text-red-200">
+                                Local Dishes
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="text-2xl font-bold text-white">
+                                4.9★
+                            </p>
+                            <p class="text-sm text-red-200">
+                                Customer Rating
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
         <!-- ===================================================== -->
 
         <!-- MAIN MENU SECTION -->
 
-        <!-- Place directly below the Hero Section -->
-
-        <!-- Navbar height = 80px -->
-
-        <!-- Menu sticks below navbar -->
+        <!-- Sticky below 80px Navbar -->
 
         <!-- ===================================================== -->
 
@@ -165,74 +352,91 @@
             class="relative bg-orange-50"
         >
 
-        ```
+        
         <!-- ===================================================== -->
-        <!-- MOBILE CATEGORY BAR -->
+        <!-- MOBILE CATEGORY NAVIGATION -->
+        <!-- Sticky below navbar -->
         <!-- ===================================================== -->
 
         <div
-            class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-md"
+            class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg"
         >
+
             <div
-                class="flex gap-3 overflow-x-auto px-4 py-3 scrollbar-hide"
+                class="flex items-center gap-3 overflow-x-auto px-4 py-4 scrollbar-hide"
             >
 
                 <a
                     href="#soups"
-                    class="whitespace-nowrap px-5 py-2 rounded-full bg-red-900 text-white text-sm font-medium"
+                    class="shrink-0 px-5 py-2.5 rounded-full bg-red-900 text-white font-medium text-sm shadow-md"
                 >
                     Soups
                 </a>
 
                 <a
-                    href="#delicacies"
-                    class="whitespace-nowrap px-5 py-2 rounded-full bg-white border border-orange-200"
+                    href="#local-delicacies"
+                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
                 >
                     Local Delicacies
                 </a>
 
                 <a
                     href="#proteins"
-                    class="whitespace-nowrap px-5 py-2 rounded-full bg-white border border-orange-200"
+                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
                 >
                     Proteins
                 </a>
 
                 <a
                     href="#specials"
-                    class="whitespace-nowrap px-5 py-2 rounded-full bg-white border border-orange-200"
+                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
                 >
-                    Specials
+                    House Specials
                 </a>
 
             </div>
+
         </div>
+
+        <!-- ===================================================== -->
+        <!-- MAIN LAYOUT -->
+        <!-- ===================================================== -->
 
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
         >
 
             <div
-                class="grid lg:grid-cols-[260px_1fr] gap-8"
+                class="grid lg:grid-cols-5 gap-8"
             >
 
                 <!-- ===================================================== -->
-                <!-- STICKY SIDEBAR -->
+                <!-- DESKTOP STICKY SIDEBAR -->
                 <!-- ===================================================== -->
 
                 <aside
-                    class="hidden lg:block"
+                    class="hidden lg:block lg:col-span-1"
                 >
 
                     <div
-                        class="sticky top-28 bg-white rounded-3xl p-6 shadow-xl border border-orange-100"
+                        class="sticky top-28 bg-white rounded-[2rem] border border-orange-100 shadow-xl shadow-red-900/5 p-6"
                     >
 
-                        <h3
-                            class="text-lg font-bold text-red-900 mb-6"
+                        <div
+                            class="mb-8"
                         >
-                            Browse Menu
-                        </h3>
+                            <h2
+                                class="text-xl font-black text-red-900"
+                            >
+                                Categories
+                            </h2>
+
+                            <p
+                                class="text-sm text-gray-500 mt-1"
+                            >
+                                Browse our menu
+                            </p>
+                        </div>
 
                         <nav
                             class="space-y-2"
@@ -240,30 +444,30 @@
 
                             <a
                                 href="#soups"
-                                class="block px-4 py-3 rounded-xl bg-red-900 text-white font-medium"
+                                class="flex items-center justify-between px-4 py-3 rounded-2xl bg-red-900 text-white font-medium shadow-md"
                             >
                                 Soups
                             </a>
 
                             <a
-                                href="#delicacies"
-                                class="block px-4 py-3 rounded-xl hover:bg-orange-50 transition"
+                                href="#local-delicacies"
+                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
                             >
                                 Local Delicacies
                             </a>
 
                             <a
                                 href="#proteins"
-                                class="block px-4 py-3 rounded-xl hover:bg-orange-50 transition"
+                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
                             >
                                 Proteins
                             </a>
 
                             <a
                                 href="#specials"
-                                class="block px-4 py-3 rounded-xl hover:bg-orange-50 transition"
+                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
                             >
-                                Specials
+                                House Specials
                             </a>
 
                         </nav>
@@ -273,290 +477,344 @@
                 </aside>
 
                 <!-- ===================================================== -->
-                <!-- PRODUCT CONTENT -->
+                <!-- PRODUCTS GRID AREA -->
                 <!-- ===================================================== -->
 
-                <div>
+                <div
+                    class="lg:col-span-4 space-y-24"
+                >
 
                     <!-- ===================================================== -->
+                    <!-- CATEGORY 1 -->
+                    <!-- ===================================================== -->
+                     
+                    <!-- ===================================================== -->
+
+                    <!-- PREMIUM FOOD PRODUCT CARD -->
+
+                    <!-- Reusable Component -->
+
+                    <!-- ===================================================== -->
+
+                    <article
+                        class="group bg-white rounded-[2rem] overflow-hidden border border-orange-100 shadow-lg shadow-red-900/5 hover:shadow-2xl hover:shadow-red-900/10 hover:-translate-y-2 transition-all duration-500"
+                    >
+
+                    
+                    <!-- ===================================================== -->
+                    <!-- IMAGE AREA -->
+                    <!-- ===================================================== -->
+
+                    <div
+                        class="relative overflow-hidden"
+                    >
+
+                        <!-- Skeleton Loader -->
+
+                        <div
+                            class="absolute inset-0 animate-pulse bg-orange-100"
+                        ></div>
+
+                        <img
+                            src="images/egusi-soup.webp"
+                            alt="Egusi Soup"
+                            loading="lazy"
+                            class="relative z-10 w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
+                        >
+
+                        <!-- Discount Badge -->
+
+                        <div
+                            class="absolute top-4 left-4 z-20"
+                        >
+
+                            <span
+                                class="px-3 py-1.5 bg-orange-600 text-white text-xs font-bold rounded-full shadow-lg"
+                            >
+                                -20%
+                            </span>
+
+                        </div>
+
+                        <!-- Bestseller Badge -->
+
+                        <div
+                            class="absolute top-4 right-4 z-20"
+                        >
+
+                            <span
+                                class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-red-900 text-xs font-bold rounded-full shadow-lg"
+                            >
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ===================================================== -->
+                    <!-- CONTENT -->
+                    <!-- ===================================================== -->
+
+                    <div
+                        class="p-5"
+                    >
+
+                        <!-- Title -->
+
+                        <h3
+                            class="text-lg font-bold text-gray-900"
+                        >
+                            Egusi Soup
+                        </h3>
+
+                        <!-- Description -->
+
+                        <p
+                            class="mt-2 text-sm text-gray-500 leading-relaxed"
+                        >
+                            Rich melon seed soup prepared with spinach,
+                            stockfish, assorted meat and traditional spices.
+                        </p>
+
+                        <!-- Rating + Delivery -->
+
+                        <div
+                            class="flex items-center justify-between mt-4"
+                        >
+
+                            <div
+                                class="flex items-center gap-1"
+                            >
+                                <span class="text-orange-500">★★★★★</span>
+
+                                <span
+                                    class="text-xs text-gray-500"
+                                >
+                                    (124)
+                                </span>
+                            </div>
+
+                            <span
+                                class="text-xs text-gray-500"
+                            >
+                                25-35 mins
+                            </span>
+
+                        </div>
+
+                        <!-- Price -->
+
+                        <div
+                            class="flex items-end gap-3 mt-5"
+                        >
+
+                            <span
+                                class="text-sm text-gray-400 line-through"
+                            >
+                                ₦6,500
+                            </span>
+
+                            <span
+                                class="text-2xl font-black text-red-900"
+                            >
+                                ₦5,200
+                            </span>
+
+                        </div>
+
+                        <!-- Quantity Selector -->
+
+                        <div
+                            class="flex items-center justify-between mt-5"
+                        >
+
+                            <div
+                                class="flex items-center border border-orange-200 rounded-xl overflow-hidden"
+                            >
+
+                                <button
+                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
+                                >
+                                    −
+                                </button>
+
+                                <span
+                                    class="w-10 text-center font-semibold"
+                                >
+                                    1
+                                </span>
+
+                                <button
+                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                            <span
+                                class="text-xs text-green-600 font-semibold"
+                            >
+                                In Stock
+                            </span>
+
+                        </div>
+
+                        <!-- CTA -->
+
+                        <button
+                            class="w-full mt-5 bg-red-900 hover:bg-red-800 text-white font-semibold py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+                    
+
+                    </article>
+
+                    <!-- ===================================================== -->
+
                     <!-- SOUPS CATEGORY -->
+
+                    <!-- 7 Products -->
+
                     <!-- ===================================================== -->
 
-                    <section
-                        id="soups"
-                        class="scroll-mt-40"
+                    <section id="soups">
+
+                    
+                    <h2 class="text-3xl font-black text-red-900 mb-8">
+                        Soups
+                    </h2>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
                     >
 
-                        <div
-                            class="mb-8"
-                        >
+                        <!-- Duplicate Product Card For -->
 
-                            <h2
-                                class="text-3xl font-black text-red-900"
-                            >
-                                Nigerian Soups
-                            </h2>
+                        <!-- Egusi Soup -->
+                        <!-- Ewedu Soup -->
+                        <!-- Ora Soup -->
+                        <!-- Edikaikong Soup -->
+                        <!-- Okazi Soup -->
+                        <!-- Ogbono Soup -->
+                        <!-- Okro Soup -->
 
-                            <p
-                                class="text-gray-600 mt-2"
-                            >
-                                Freshly prepared traditional soups served with your preferred swallow.
-                            </p>
-
-                        </div>
-
-                        <div
-                            class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6"
-                        >
-
-                            <!-- ===================================================== -->
-                            <!-- PRODUCT CARD -->
-                            <!-- ===================================================== -->
-
-                            <article
-                                class="group bg-white rounded-[28px] overflow-hidden border border-orange-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
-                            >
-
-                                <!-- IMAGE -->
-
-                                <div
-                                    class="relative overflow-hidden"
-                                >
-
-                                    <img
-                                        src="images/egusi.webp"
-                                        alt="Egusi Soup"
-                                        loading="lazy"
-                                        class="w-full h-56 object-cover group-hover:scale-110 transition duration-700"
-                                    >
-
-                                    <span
-                                        class="absolute top-4 left-4 px-3 py-1 rounded-full bg-orange-600 text-white text-xs font-bold"
-                                    >
-                                        -20%
-                                    </span>
-
-                                </div>
-
-                                <!-- CONTENT -->
-
-                                <div
-                                    class="p-5"
-                                >
-
-                                    <h3
-                                        class="font-bold text-lg text-gray-900"
-                                    >
-                                        Egusi Soup
-                                    </h3>
-
-                                    <p
-                                        class="text-sm text-gray-500 mt-2"
-                                    >
-                                        Melon seeds, spinach, stockfish, assorted meat and spices.
-                                    </p>
-
-                                    <!-- PRICE -->
-
-                                    <div
-                                        class="flex items-center gap-3 mt-4"
-                                    >
-
-                                        <span
-                                            class="text-gray-400 line-through"
-                                        >
-                                            ₦6,000
-                                        </span>
-
-                                        <span
-                                            class="text-2xl font-black text-red-900"
-                                        >
-                                            ₦4,800
-                                        </span>
-
-                                    </div>
-
-                                    <!-- QUANTITY -->
-
-                                    <div
-                                        class="flex items-center justify-between mt-5"
-                                    >
-
-                                        <div
-                                            class="flex items-center border rounded-xl"
-                                        >
-
-                                            <button
-                                                class="px-3 py-2"
-                                            >
-                                                -
-                                            </button>
-
-                                            <span
-                                                class="px-4"
-                                            >
-                                                1
-                                            </span>
-
-                                            <button
-                                                class="px-3 py-2"
-                                            >
-                                                +
-                                            </button>
-
-                                        </div>
-
-                                    </div>
-
-                                    <!-- CTA -->
-
-                                    <button
-                                        class="w-full mt-5 bg-red-900 hover:bg-red-800 text-white font-semibold py-3 rounded-2xl transition duration-300 shadow-lg"
-                                    >
-                                        Add To Cart
-                                    </button>
-
-                                </div>
-
-                            </article>
-
-                            <!-- DUPLICATE FOR -->
-                            <!-- Ogbono -->
-                            <!-- Okro -->
-                            <!-- Ewedu -->
-                            <!-- Ora -->
-                            <!-- Okazi -->
-                            <!-- Edikaikong -->
-
-                        </div>
+                    </div>
+                    
 
                     </section>
 
                     <!-- ===================================================== -->
+
                     <!-- LOCAL DELICACIES -->
+
+                    <!-- 8 Products -->
+
                     <!-- ===================================================== -->
 
                     <section
-                        id="delicacies"
-                        class="mt-20 scroll-mt-40"
+                        id="local-delicacies"
+                        class="mt-24"
                     >
 
-                        <div class="mb-8">
+                    
+                    <h2
+                        class="text-3xl font-black text-red-900 mb-8"
+                    >
+                        Local Delicacies
+                    </h2>
 
-                            <h2
-                                class="text-3xl font-black text-red-900"
-                            >
-                                Local Delicacies
-                            </h2>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
+                    >
 
-                            <p
-                                class="text-gray-600 mt-2"
-                            >
-                                Authentic Nigerian meals prepared fresh daily.
-                            </p>
+                        <!-- Jollof Rice -->
+                        <!-- Fried Rice -->
+                        <!-- Noodles -->
+                        <!-- Yam Porridge -->
+                        <!-- Beans Porridge -->
+                        <!-- Fried Plantain -->
+                        <!-- Abacha -->
+                        <!-- Fufu Combo -->
 
-                        </div>
-
-                        <div
-                            class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6"
-                        >
-
-                            <!-- Add cards for -->
-                            <!-- Jollof Rice -->
-                            <!-- Fried Rice -->
-                            <!-- Noodles -->
-                            <!-- Yam Porridge -->
-                            <!-- Beans Porridge -->
-                            <!-- Fried Plantain -->
-                            <!-- Abacha -->
-                            <!-- Fufu -->
-                            <!-- Eba -->
-                            <!-- Semo -->
-                            <!-- Amala -->
-
-                        </div>
+                    </div>
+                    
 
                     </section>
 
                     <!-- ===================================================== -->
+
                     <!-- PROTEINS -->
+
+                    <!-- 8 Products -->
+
                     <!-- ===================================================== -->
 
                     <section
                         id="proteins"
-                        class="mt-20 scroll-mt-40"
+                        class="mt-24"
                     >
 
-                        <div class="mb-8">
+                    
+                    <h2
+                        class="text-3xl font-black text-red-900 mb-8"
+                    >
+                        Proteins
+                    </h2>
 
-                            <h2
-                                class="text-3xl font-black text-red-900"
-                            >
-                                Proteins
-                            </h2>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
+                    >
 
-                            <p
-                                class="text-gray-600 mt-2"
-                            >
-                                Rich protein options to complement your meals.
-                            </p>
+                        <!-- Nkwobi -->
+                        <!-- Fried Chicken -->
+                        <!-- Kpomo -->
+                        <!-- Grilled Fish -->
+                        <!-- Bush Meat Pepper Soup -->
+                        <!-- Goat Meat Pepper Soup -->
+                        <!-- Chicken Pepper Soup -->
+                        <!-- Beef Pepper Soup -->
 
-                        </div>
-
-                        <div
-                            class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6"
-                        >
-
-                            <!-- Add cards for -->
-                            <!-- Nkwobi -->
-                            <!-- Fried Chicken -->
-                            <!-- Kpomo -->
-                            <!-- Grilled Fish -->
-                            <!-- Goat Meat Pepper Soup -->
-                            <!-- Turkey Pepper Soup -->
-                            <!-- Beef Pepper Soup -->
-                            <!-- Chicken Pepper Soup -->
-
-                        </div>
+                    </div>
+                    
 
                     </section>
 
                     <!-- ===================================================== -->
-                    <!-- SPECIALS -->
+
+                    <!-- HOUSE SPECIALS -->
+
+                    <!-- 4 Products -->
+
                     <!-- ===================================================== -->
 
                     <section
                         id="specials"
-                        class="mt-20 scroll-mt-40"
+                        class="mt-24"
                     >
 
-                        <div class="mb-8">
+                    
+                    <h2
+                        class="text-3xl font-black text-red-900 mb-8"
+                    >
+                        House Specials
+                    </h2>
 
-                            <h2
-                                class="text-3xl font-black text-red-900"
-                            >
-                                House Specials
-                            </h2>
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
+                    >
 
-                            <p
-                                class="text-gray-600 mt-2"
-                            >
-                                Customer favorites and chef recommendations.
-                            </p>
+                        <!-- Fisherman's Soup -->
+                        <!-- Native Rice -->
+                        <!-- Isi Ewu -->
+                        <!-- Assorted Meat Platter -->
 
-                        </div>
-
-                        <div
-                            class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6"
-                        >
-
-                            <!-- Cards -->
-                            <!-- Fisherman's Soup -->
-                            <!-- Native Rice -->
-                            <!-- Isi Ewu -->
-                            <!-- Assorted Meat Platter -->
-
-                        </div>
+                    </div>
+                    
 
                     </section>
 
@@ -565,46 +823,11 @@
             </div>
 
         </div>
-        ```
+        
 
         </section>
 
 
-        <!-- ===================================================== -->
-        <!-- STICKY MAIN MENU SECTION -->
-        <!-- ===================================================== -->
-        <section
-            class="sticky top-20 z-40 bg-white border-b border-orange-100"
-            aria-label="Main Menu"
-        >
-
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-            >
-
-                <!-- Skeleton Loading -->
-                <div class="animate-pulse">
-                    
-                    <div
-                        class="h-10 w-64 bg-orange-100 rounded-xl mb-6"
-                    >Hello 1</div>
-
-                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-                        <div class="h-24 rounded-2xl bg-orange-100">Premium words</div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
 
         <!-- ===================================================== -->
         <!-- FEATURED CATEGORIES -->
