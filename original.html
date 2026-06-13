@@ -340,566 +340,237 @@
 
         </section>
         <!-- ===================================================== -->
-
-        <!-- MAIN MENU SECTION -->
-
-        <!-- Sticky below 80px Navbar -->
-
+        <!-- MAIN MENU SECTION (REFINED ARCHITECTURE) -->
         <!-- ===================================================== -->
 
-        <section
-            id="menu"
-            class="relative bg-orange-50"
-        >
+        <section id="menu" class="relative bg-orange-50">
 
-        
-        <!-- ===================================================== -->
-        <!-- MOBILE CATEGORY NAVIGATION -->
-        <!-- Sticky below navbar -->
-        <!-- ===================================================== -->
+            <!-- ===================================================== -->
+            <!-- MOBILE CATEGORY BAR -->
+            <!-- ===================================================== -->
 
-        <div
-            class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg"
-        >
+            <div class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg">
+                <div class="flex gap-3 overflow-x-auto px-4 py-4">
 
-            <div
-                class="flex items-center gap-3 overflow-x-auto px-4 py-4 scrollbar-hide"
-            >
+                    <a href="#soups" class="px-5 py-2 rounded-full bg-red-900 text-white text-sm">
+                        Soups
+                    </a>
 
-                <a
-                    href="#soups"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-red-900 text-white font-medium text-sm shadow-md"
-                >
-                    Soups
-                </a>
+                    <a href="#delicacies" class="px-5 py-2 rounded-full bg-white border">
+                        Delicacies
+                    </a>
 
-                <a
-                    href="#local-delicacies"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    Local Delicacies
-                </a>
+                    <a href="#proteins" class="px-5 py-2 rounded-full bg-white border">
+                        Proteins
+                    </a>
 
-                <a
-                    href="#proteins"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    Proteins
-                </a>
+                    <a href="#specials" class="px-5 py-2 rounded-full bg-white border">
+                        Specials
+                    </a>
 
-                <a
-                    href="#specials"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    House Specials
-                </a>
-
+                </div>
             </div>
 
-        </div>
+            <!-- ===================================================== -->
+            <!-- LAYOUT -->
+            <!-- ===================================================== -->
 
-        <!-- ===================================================== -->
-        <!-- MAIN LAYOUT -->
-        <!-- ===================================================== -->
+            <div class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
 
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-        >
+                <div class="grid lg:grid-cols-5 gap-8">
 
-            <div
-                class="grid lg:grid-cols-5 gap-8"
-            >
+                    <!-- ===================================================== -->
+                    <!-- SIDEBAR -->
+                    <!-- ===================================================== -->
 
-                <!-- ===================================================== -->
-                <!-- DESKTOP STICKY SIDEBAR -->
-                <!-- ===================================================== -->
+                    <aside class="hidden lg:block lg:col-span-1">
+                        <div class="sticky top-28 bg-white rounded-3xl p-6 shadow-xl">
 
-                <aside
-                    class="hidden lg:block lg:col-span-1"
-                >
-
-                    <div
-                        class="sticky top-28 bg-white rounded-[2rem] border border-orange-100 shadow-xl shadow-red-900/5 p-6"
-                    >
-
-                        <div
-                            class="mb-8"
-                        >
-                            <h2
-                                class="text-xl font-black text-red-900"
-                            >
-                                Categories
+                            <h2 class="text-xl font-black text-red-900 mb-6">
+                                Menu
                             </h2>
 
-                            <p
-                                class="text-sm text-gray-500 mt-1"
-                            >
-                                Browse our menu
-                            </p>
+                            <nav class="space-y-2 text-sm">
+
+                                <a href="#soups" class="block p-3 rounded-xl bg-red-900 text-white">
+                                    Soups
+                                </a>
+
+                                <a href="#delicacies" class="block p-3 rounded-xl hover:bg-orange-50">
+                                    Local Delicacies
+                                </a>
+
+                                <a href="#proteins" class="block p-3 rounded-xl hover:bg-orange-50">
+                                    Proteins
+                                </a>
+
+                                <a href="#specials" class="block p-3 rounded-xl hover:bg-orange-50">
+                                    House Specials
+                                </a>
+
+                            </nav>
+
                         </div>
+                    </aside>
 
-                        <nav
-                            class="space-y-2"
-                        >
+                    <!-- ===================================================== -->
+                    <!-- PRODUCT AREA -->
+                    <!-- ===================================================== -->
 
-                            <a
-                                href="#soups"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl bg-red-900 text-white font-medium shadow-md"
-                            >
+                    <div class="lg:col-span-4 space-y-24">
+
+
+                        <!-- ===================================================== -->
+                        <!-- 🟠 PRODUCT CARD TEMPLATE (REUSABLE COMPONENT) -->
+                        <!-- ===================================================== -->
+
+                        <!--
+                            COPY THIS BLOCK FOR EVERY PRODUCT
+                            ONLY CHANGE:
+                            - image
+                            - name
+                            - description
+                            - price
+                        -->
+
+                        <!-- PRODUCT CARD -->
+                        <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                            <div class="relative">
+
+                                <img
+                                    src="images/egusi.jpg"
+                                    class="h-56 w-full object-cover group-hover:scale-105 transition"
+                                    loading="lazy"
+                                />
+
+                                <span class="absolute top-4 left-4 bg-orange-600 text-white text-xs px-3 py-1 rounded-full">
+                                    -20%
+                                </span>
+
+                            </div>
+
+                            <div class="p-5">
+
+                                <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                <p class="text-sm text-gray-500 mt-2">
+                                    Melon seeds, spinach, stockfish & assorted meat.
+                                </p>
+
+                                <div class="flex justify-between items-center mt-4">
+
+                                    <div>
+                                        <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                        <p class="font-black text-red-900">₦4,800</p>
+                                    </div>
+
+                                    <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                        Add
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: SOUPS -->
+                        <!-- ===================================================== -->
+
+                        <section id="soups">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
                                 Soups
-                            </a>
+                            </h2>
 
-                            <a
-                                href="#local-delicacies"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                                <!-- instantiate PRODUCT CARD -->
+                                <!-- Egusi -->
+                                <!-- Ogbono -->
+                                <!-- Okro -->
+                                <!-- Ewedu -->
+                                <!-- Edikaikong -->
+                                <!-- Ora -->
+                                <!-- Okazi -->
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: LOCAL DELICACIES -->
+                        <!-- ===================================================== -->
+
+                        <section id="delicacies">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
                                 Local Delicacies
-                            </a>
+                            </h2>
 
-                            <a
-                                href="#proteins"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                                <!-- Jollof Rice -->
+                                <!-- Fried Rice -->
+                                <!-- Yam Porridge -->
+                                <!-- Beans Porridge -->
+                                <!-- Abacha -->
+                                <!-- Fufu -->
+                                <!-- Semo -->
+                                <!-- Amala -->
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: PROTEINS -->
+                        <!-- ===================================================== -->
+
+                        <section id="proteins">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
                                 Proteins
-                            </a>
+                            </h2>
 
-                            <a
-                                href="#specials"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                                <!-- Fried Chicken -->
+                                <!-- Nkwobi -->
+                                <!-- Grilled Fish -->
+                                <!-- Kpomo -->
+                                <!-- Pepper Soup variants -->
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: SPECIALS -->
+                        <!-- ===================================================== -->
+
+                        <section id="specials">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
                                 House Specials
-                            </a>
+                            </h2>
 
-                        </nav>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
 
-                    </div>
-
-                </aside>
-
-                <!-- ===================================================== -->
-                <!-- PRODUCTS GRID AREA -->
-                <!-- ===================================================== -->
-
-                <div
-                    class="lg:col-span-4 space-y-24"
-                >
-
-                    <!-- ===================================================== -->
-                    <!-- CATEGORY 1 -->
-                    <!-- ===================================================== -->
-                     
-                    <!-- ===================================================== -->
-
-                    <!-- PREMIUM FOOD PRODUCT CARD -->
-
-                    <!-- Reusable Component -->
-
-                    <!-- ===================================================== -->
-
-                    <article
-                        class="group bg-white rounded-[2rem] overflow-hidden border border-orange-100 shadow-lg shadow-red-900/5 hover:shadow-2xl hover:shadow-red-900/10 hover:-translate-y-2 transition-all duration-500"
-                    >
-
-                    
-                    <!-- ===================================================== -->
-                    <!-- IMAGE AREA -->
-                    <!-- ===================================================== -->
-
-                    <div
-                        class="relative overflow-hidden"
-                    >
-
-                        <!-- Skeleton Loader -->
-
-                        <div
-                            class="absolute inset-0 animate-pulse bg-orange-100"
-                        ></div>
-
-                        <img
-                            src="images/egusi-soup.webp"
-                            alt="Egusi Soup"
-                            loading="lazy"
-                            class="relative z-10 w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
-                        >
-
-                        <!-- Discount Badge -->
-
-                        <div
-                            class="absolute top-4 left-4 z-20"
-                        >
-
-                            <span
-                                class="px-3 py-1.5 bg-orange-600 text-white text-xs font-bold rounded-full shadow-lg"
-                            >
-                                -20%
-                            </span>
-
-                        </div>
-
-                        <!-- Bestseller Badge -->
-
-                        <div
-                            class="absolute top-4 right-4 z-20"
-                        >
-
-                            <span
-                                class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-red-900 text-xs font-bold rounded-full shadow-lg"
-                            >
-                                Bestseller
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ===================================================== -->
-                    <!-- CONTENT -->
-                    <!-- ===================================================== -->
-
-                    <div
-                        class="p-5"
-                    >
-
-                        <!-- Title -->
-
-                        <h3
-                            class="text-lg font-bold text-gray-900"
-                        >
-                            Egusi Soup
-                        </h3>
-
-                        <!-- Description -->
-
-                        <p
-                            class="mt-2 text-sm text-gray-500 leading-relaxed"
-                        >
-                            Rich melon seed soup prepared with spinach,
-                            stockfish, assorted meat and traditional spices.
-                        </p>
-
-                        <!-- Rating + Delivery -->
-
-                        <div
-                            class="flex items-center justify-between mt-4"
-                        >
-
-                            <div
-                                class="flex items-center gap-1"
-                            >
-                                <span class="text-orange-500">★★★★★</span>
-
-                                <span
-                                    class="text-xs text-gray-500"
-                                >
-                                    (124)
-                                </span>
-                            </div>
-
-                            <span
-                                class="text-xs text-gray-500"
-                            >
-                                25-35 mins
-                            </span>
-
-                        </div>
-
-                        <!-- Price -->
-
-                        <div
-                            class="flex items-end gap-3 mt-5"
-                        >
-
-                            <span
-                                class="text-sm text-gray-400 line-through"
-                            >
-                                ₦6,500
-                            </span>
-
-                            <span
-                                class="text-2xl font-black text-red-900"
-                            >
-                                ₦5,200
-                            </span>
-
-                        </div>
-
-                        <!-- Quantity Selector -->
-
-                        <div
-                            class="flex items-center justify-between mt-5"
-                        >
-
-                            <div
-                                class="flex items-center border border-orange-200 rounded-xl overflow-hidden"
-                            >
-
-                                <button
-                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
-                                >
-                                    −
-                                </button>
-
-                                <span
-                                    class="w-10 text-center font-semibold"
-                                >
-                                    1
-                                </span>
-
-                                <button
-                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
-                                >
-                                    +
-                                </button>
+                                <!-- Fisherman's Soup -->
+                                <!-- Native Rice -->
+                                <!-- Isi Ewu -->
+                                <!-- Assorted Meat Platter -->
 
                             </div>
 
-                            <span
-                                class="text-xs text-green-600 font-semibold"
-                            >
-                                In Stock
-                            </span>
-
-                        </div>
-
-                        <!-- CTA -->
-
-                        <button
-                            class="w-full mt-5 bg-red-900 hover:bg-red-800 text-white font-semibold py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                            Add To Cart
-                        </button>
-
-                    </div>
-                    
-
-                    </article>
-
-                    <!-- ===================================================== -->
-
-                    <!-- SOUPS CATEGORY -->
-
-                    <!-- 7 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section id="soups">
-
-                    
-                    <h2 class="text-3xl font-black text-red-900 mb-8">
-                        Soups
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Duplicate Product Card For -->
-
-                        <!-- Egusi Soup -->
-                        <!-- Ewedu Soup -->
-                        <!-- Ora Soup -->
-                        <!-- Edikaikong Soup -->
-                        <!-- Okazi Soup -->
-                        <!-- Ogbono Soup -->
-                        <!-- Okro Soup -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- LOCAL DELICACIES -->
-
-                    <!-- 8 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="local-delicacies"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        Local Delicacies
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Jollof Rice -->
-                        <!-- Fried Rice -->
-                        <!-- Noodles -->
-                        <!-- Yam Porridge -->
-                        <!-- Beans Porridge -->
-                        <!-- Fried Plantain -->
-                        <!-- Abacha -->
-                        <!-- Fufu Combo -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- PROTEINS -->
-
-                    <!-- 8 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="proteins"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        Proteins
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Nkwobi -->
-                        <!-- Fried Chicken -->
-                        <!-- Kpomo -->
-                        <!-- Grilled Fish -->
-                        <!-- Bush Meat Pepper Soup -->
-                        <!-- Goat Meat Pepper Soup -->
-                        <!-- Chicken Pepper Soup -->
-                        <!-- Beef Pepper Soup -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- HOUSE SPECIALS -->
-
-                    <!-- 4 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="specials"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        House Specials
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Fisherman's Soup -->
-                        <!-- Native Rice -->
-                        <!-- Isi Ewu -->
-                        <!-- Assorted Meat Platter -->
-
-                    </div>
-                    
-
-                    </section>
-
-                </div>
-
-            </div>
-
-        </div>
-        
-
-        </section>
-
-
-
-        <!-- ===================================================== -->
-        <!-- FEATURED CATEGORIES -->
-        <!-- ===================================================== -->
-        <section
-            class="min-h-screen bg-orange-50"
-            aria-label="Featured Categories"
-        >
-
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
-            >
-
-                <!-- Skeleton Layout -->
-                <div class="animate-pulse">
-
-                    <div
-                        class="h-12 w-72 bg-orange-100 rounded-xl mb-12"
-                    ></div>
-
-                    <div
-                        class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
-                    >
-
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ===================================================== -->
-        <!-- TESTIMONIALS -->
-        <!-- ===================================================== -->
-        <section
-            class="min-h-screen bg-white"
-            aria-label="Testimonials"
-        >
-
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
-            >
-
-                <div class="animate-pulse">
-
-                    <div
-                        class="h-12 w-64 bg-orange-100 rounded-xl mb-16"
-                    ></div>
-
-                    <div
-                        class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-                    >
-
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
-
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
-
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
+                        </section>
 
                     </div>
 
