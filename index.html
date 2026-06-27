@@ -7,7 +7,7 @@
 
     <meta
         name="description"
-        content="Order freshly prepared Nigerian meals online and get fast delivery anywhere within Enugu Metropolis."
+        content="Order freshly cooked Nigerian meals online and get fast delivery anywhere within Enugu Metropolis."
     />
 
     <!-- Tailwind CSS compiled stylesheet -->
@@ -20,77 +20,48 @@
     <!-- STICKY NAVBAR -->
     <!-- ===================================================== -->
     <header
-        class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg shadow-red-900/5"
+        class="sticky top-0 z-50 bg-red-900 backdrop-blur-xl border-b shadow-lg shadow-red-900"
     >
         <nav
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
         >
 
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 flex-shrink-0">
+            <a href="#" class="flex items-center gap-3 shrink-0">
                 <div
-                    class="w-11 h-11 rounded-2xl bg-red-900 flex items-center justify-center shadow-lg"
+                    class="w-11 h-11 rounded-2xl bg-orange-600 flex items-center justify-center shadow-lg"
                 >
                     <span class="text-white font-bold text-lg">M</span>
                 </div>
 
                 <div>
-                    <h1 class="font-black text-red-900 text-lg leading-none">
+                    <h1 class="font-black text-white shadow-black shadow-1xl text-lg leading-none">
                         MamaPutOnline
                     </h1>
-                    <p class="text-xs text-orange-600">
-                        Enugu Food Delivery
+                    <p class="text-xs pt-2 text-cream">
+                        ...Delivering Joy - Everyday.
                     </p>
                 </div>
             </a>
-
+ 
             <!-- Navigation -->
             <ul
-                class="hidden lg:flex items-center gap-8 font-medium text-gray-700"
+                class="hidden lg:flex items-center gap-8 font-medium text-gray-200"
             >
                 <li>
-                    <a
-                        href="#"
-                        class="hover:text-orange-600 transition-colors duration-300"
-                    >
-                        Home
-                    </a>
+                    <a href="#home" class="hover:text-orange-600 transition-colors duration-300">Home</a>
                 </li>
-
                 <li>
-                    <a
-                        href="#"
-                        class="hover:text-orange-600 transition-colors duration-300"
-                    >
-                        Products
-                    </a>
+                    <a href="#categories" class="hover:text-orange-600 transition-colors duration-300">Products</a>
                 </li>
-
                 <li>
-                    <a
-                        href="#"
-                        class="hover:text-orange-600 transition-colors duration-300"
-                    >
-                        Services
-                    </a>
+                    <a href="#why-us" class="hover:text-orange-600 transition-colors duration-300">Services</a>
                 </li>
-
                 <li>
-                    <a
-                        href="#"
-                        class="hover:text-orange-600 transition-colors duration-300"
-                    >
-                        Reviews
-                    </a>
+                    <a href="#reviews" class="hover:text-orange-600 transition-colors duration-300">Reviews</a>
                 </li>
-
                 <li>
-                    <a
-                        href="#"
-                        class="hover:text-orange-600 transition-colors duration-300"
-                    >
-                        Contact Us
-                    </a>
+                    <a href="#contact" class="hover:text-orange-600 transition-colors duration-300">Contact Us</a>
                 </li>
             </ul>
 
@@ -126,11 +97,8 @@
                         />
                     </svg>
 
-                    <span
-                        class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-orange-600 text-white text-xs flex items-center justify-center"
-                    >
-                        0
-                    </span>
+                    <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-orange-600 text-white text-xs flex items-center justify-center">0</span>
+
                 </button>
             </div>
 
@@ -138,735 +106,188 @@
     </header>
 
     <main>
-
         
         <!-- HERO SECTION -->
 
         <!-- ===================================================== -->
-
-        <section
-            class="relative w-full min-h-[40vh] bg-gradient-to-br from-red-900 via-red-800 to-red-900 overflow-hidden"
-            aria-labelledby="hero-heading"
-        >
-
-        <!-- Background Glow Effects -->
-        <div
-            class="absolute top-0 left-0 w-96 h-96 bg-orange-500/20 blur-3xl rounded-full"
-            aria-hidden="true"
-        ></div>
-
-        <div
-            class="absolute bottom-0 right-0 w-96 h-96 bg-orange-400/10 blur-3xl rounded-full"
-            aria-hidden="true"
-        ></div>
-
-        <div
-            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16"
-        >
-
-            <div
-                class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
-            >
-
-                <!-- ===================================================== -->
-                <!-- LEFT COLUMN - FOOD IMAGE -->
-                <!-- ===================================================== -->
-                <div class="relative order-2 lg:order-1">
-
-                    <!-- Decorative Accent -->
-                    <div
-                        class="absolute -top-4 -left-4 w-24 h-24 bg-orange-500 rounded-full blur-3xl opacity-40"
-                    ></div>
-
-                    <!-- Skeleton Loader -->
-                    <div
-                        class="animate-pulse rounded-[2rem] overflow-hidden shadow-2xl shadow-black/20 bg-white/10"
-                    >
-
-                        <img
-                            src="images/hero-pot.webp"
-                            alt="Large steaming pot of freshly prepared Nigerian food"
-                            loading="lazy"
-                            class="w-full h-[320px] md:h-[420px] object-cover rounded-[2rem]"
-                        />
-
-                    </div>
-
-                    <!-- Floating Badge -->
-                    <div
-                        class="absolute bottom-5 left-5 bg-white backdrop-blur-md rounded-2xl px-4 py-3 shadow-2xl"
-                    >
-                        <p class="text-sm font-semibold text-gray-900">
-                            Freshly Cooked Daily
-                        </p>
-                        <p class="text-xs text-gray-500">
-                            Made when you order
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- ===================================================== -->
-                <!-- RIGHT COLUMN - CONTENT -->
-                <!-- ===================================================== -->
-                <div
-                    class="order-1 lg:order-2 text-center lg:text-left"
-                >
-
-                    <!-- Trust Badge -->
-                    <div
-                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-400/20 mb-6"
-                    >
-                        <span
-                            class="w-2 h-2 rounded-full bg-orange-500"
-                        ></span>
-
-                        <span
-                            class="text-orange-200 text-sm font-medium"
-                        >
-                            Delivering Across Enugu Metropolis
-                        </span>
-                    </div>
-
-                    <!-- Headline -->
-                    <h1
-                        id="hero-heading"
-                        class="text-white font-black leading-tight text-4xl sm:text-5xl lg:text-6xl"
-                    >
-                        Real Nigerian Meals,
-                        <span class="text-orange-400">
-                            Delivered Hot
-                        </span>
-                        To Your Doorstep.
-                    </h1>
-
-                    <!-- Supporting Text -->
-                    <p
-                        class="mt-6 text-lg text-red-100 max-w-xl mx-auto lg:mx-0 leading-relaxed"
-                    >
-                        Skip the cooking, avoid the queues, and enjoy authentic
-                        home-cooked Nigerian favorites. From rich Egusi and
-                        Edikaikong to delicious Jollof Rice, Nkwobi and Grilled
-                        Fish, MamaPutOnline delivers comfort food wherever you are
-                        in Enugu.
-                    </p>
-
-                    <!-- Benefits -->
-                    <div
-                        class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start"
-                    >
-
-                        <span
-                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
-                        >
-                            Fast Delivery
-                        </span>
-
-                        <span
-                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
-                        >
-                            Freshly Prepared
-                        </span>
-
-                        <span
-                            class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
-                        >
-                            Affordable Meals
-                        </span>
-
-                    </div>
-
-                    <!-- CTA Buttons -->
-                    <div
-                        class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-                    >
-
-                        <!-- Primary CTA -->
-                        <a
-                            href="#menu"
-                            class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-2xl shadow-2xl shadow-orange-900/40 transition-all duration-300 hover:-translate-y-1"
-                        >
-                            Order Food Now
-                        </a>
-
-                        <!-- Secondary CTA -->
-                        <a
-                            href="#categories"
-                            class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-white font-semibold rounded-2xl transition-all duration-300 hover:-translate-y-1"
-                        >
-                            Browse Menu
-                        </a>
-
-                    </div>
-
-                    <!-- Social Proof -->
-                    <div
-                        class="mt-8 flex flex-wrap items-center gap-6 justify-center lg:justify-start"
-                    >
-
-                        <div>
-                            <p class="text-2xl font-bold text-white">
-                                500+
-                            </p>
-                            <p class="text-sm text-red-200">
-                                Happy Customers
-                            </p>
-                        </div>
-
-                        <div>
-                            <p class="text-2xl font-bold text-white">
-                                15+
-                            </p>
-                            <p class="text-sm text-red-200">
-                                Local Dishes
-                            </p>
-                        </div>
-
-                        <div>
-                            <p class="text-2xl font-bold text-white">
-                                4.9★
-                            </p>
-                            <p class="text-sm text-red-200">
-                                Customer Rating
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
+         <section id="home" class="relative w-full min-h-[40vh] bg-linear-to-br from-red-900 via-red-700 to-red-900 overflow-hidden"  aria-labelledby="hero-heading">
+            
+            <!-- Background Glow Effects -->
+             <!-- <div class="absolute top-0 left-0 w-96 h-96 bg-orange-500/20 blur-3xl rounded-full"
+                aria-hidden="true" >
+            
             </div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-400/10 blur-3xl rounded-full" aria-hidden="true">
 
-        </div>
 
-        </section>
-        <!-- ===================================================== -->
+            </div> -->
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16" > 
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-        <!-- MAIN MENU SECTION -->
+                    <!-- ===================================================== -->
+                    <!-- LEFT COLUMN - FOOD IMAGE -->
+                    <!-- ===================================================== -->
+                    <div class="relative order-2 lg:order-1">
 
-        <!-- Sticky below 80px Navbar -->
-
-        <!-- ===================================================== -->
-
-        <section
-            id="menu"
-            class="relative bg-orange-50"
-        >
-
-        
-        <!-- ===================================================== -->
-        <!-- MOBILE CATEGORY NAVIGATION -->
-        <!-- Sticky below navbar -->
-        <!-- ===================================================== -->
-
-        <div
-            class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg"
-        >
-
-            <div
-                class="flex items-center gap-3 overflow-x-auto px-4 py-4 scrollbar-hide"
-            >
-
-                <a
-                    href="#soups"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-red-900 text-white font-medium text-sm shadow-md"
-                >
-                    Soups
-                </a>
-
-                <a
-                    href="#local-delicacies"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    Local Delicacies
-                </a>
-
-                <a
-                    href="#proteins"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    Proteins
-                </a>
-
-                <a
-                    href="#specials"
-                    class="shrink-0 px-5 py-2.5 rounded-full bg-white border border-orange-200 hover:bg-orange-50 transition"
-                >
-                    House Specials
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- ===================================================== -->
-        <!-- MAIN LAYOUT -->
-        <!-- ===================================================== -->
-
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-        >
-
-            <div
-                class="grid lg:grid-cols-5 gap-8"
-            >
-
-                <!-- ===================================================== -->
-                <!-- DESKTOP STICKY SIDEBAR -->
-                <!-- ===================================================== -->
-
-                <aside
-                    class="hidden lg:block lg:col-span-1"
-                >
-
-                    <div
-                        class="sticky top-28 bg-white rounded-[2rem] border border-orange-100 shadow-xl shadow-red-900/5 p-6"
-                    >
-
+                        <!-- Decorative Accent -->
                         <div
-                            class="mb-8"
-                        >
-                            <h2
-                                class="text-xl font-black text-red-900"
-                            >
-                                Categories
-                            </h2>
-
-                            <p
-                                class="text-sm text-gray-500 mt-1"
-                            >
-                                Browse our menu
-                            </p>
-                        </div>
-
-                        <nav
-                            class="space-y-2"
-                        >
-
-                            <a
-                                href="#soups"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl bg-red-900 text-white font-medium shadow-md"
-                            >
-                                Soups
-                            </a>
-
-                            <a
-                                href="#local-delicacies"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
-                                Local Delicacies
-                            </a>
-
-                            <a
-                                href="#proteins"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
-                                Proteins
-                            </a>
-
-                            <a
-                                href="#specials"
-                                class="flex items-center justify-between px-4 py-3 rounded-2xl hover:bg-orange-50 transition duration-300"
-                            >
-                                House Specials
-                            </a>
-
-                        </nav>
-
-                    </div>
-
-                </aside>
-
-                <!-- ===================================================== -->
-                <!-- PRODUCTS GRID AREA -->
-                <!-- ===================================================== -->
-
-                <div
-                    class="lg:col-span-4 space-y-24"
-                >
-
-                    <!-- ===================================================== -->
-                    <!-- CATEGORY 1 -->
-                    <!-- ===================================================== -->
-                     
-                    <!-- ===================================================== -->
-
-                    <!-- PREMIUM FOOD PRODUCT CARD -->
-
-                    <!-- Reusable Component -->
-
-                    <!-- ===================================================== -->
-
-                    <article
-                        class="group bg-white rounded-[2rem] overflow-hidden border border-orange-100 shadow-lg shadow-red-900/5 hover:shadow-2xl hover:shadow-red-900/10 hover:-translate-y-2 transition-all duration-500"
-                    >
-
-                    
-                    <!-- ===================================================== -->
-                    <!-- IMAGE AREA -->
-                    <!-- ===================================================== -->
-
-                    <div
-                        class="relative overflow-hidden"
-                    >
-
-                        <!-- Skeleton Loader -->
-
-                        <div
-                            class="absolute inset-0 animate-pulse bg-orange-100"
+                            class="absolute -top-4 -left-4 w-24 h-24 bg-orange-500 rounded-full blur-3xl opacity-40"
                         ></div>
 
-                        <img
-                            src="images/egusi-soup.webp"
-                            alt="Egusi Soup"
-                            loading="lazy"
-                            class="relative z-10 w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
-                        >
-
-                        <!-- Discount Badge -->
-
+                        <!-- Skeleton Loader -->
                         <div
-                            class="absolute top-4 left-4 z-20"
+                            class="animate-pulse rounded-4xl overflow-hidden shadow-2xl shadow-black/20 bg-white/10"
                         >
 
-                            <span
-                                class="px-3 py-1.5 bg-orange-600 text-white text-xs font-bold rounded-full shadow-lg"
-                            >
-                                -20%
-                            </span>
+                            <img
+                                src="images/hero-pot.webp"
+                                alt="Large steaming pot of freshly prepared mamaputonline's Nigerian food"
+                                loading="lazy"
+                                class="w-full h-80 md:h-105 object-cover rounded-4xl"
+                            />
 
                         </div>
 
-                        <!-- Bestseller Badge -->
-
+                        <!-- Floating Badge -->
                         <div
-                            class="absolute top-4 right-4 z-20"
+                            class="absolute bottom-5 left-5 bg-white backdrop-blur-md rounded-2xl px-4 py-3 shadow-2xl"
                         >
-
-                            <span
-                                class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-red-900 text-xs font-bold rounded-full shadow-lg"
-                            >
-                                Bestseller
-                            </span>
-
+                            <p class="text-sm font-semibold text-gray-900">
+                                Freshly Cooked Daily
+                            </p>
+                            <p class="text-xs text-gray-500">
+                                Made when you order
+                            </p>
                         </div>
 
                     </div>
 
                     <!-- ===================================================== -->
-                    <!-- CONTENT -->
+                    <!-- RIGHT COLUMN - CONTENT -->
                     <!-- ===================================================== -->
-
                     <div
-                        class="p-5"
+                        class="order-1 lg:order-2 text-center lg:text-left"
                     >
 
-                        <!-- Title -->
-
-                        <h3
-                            class="text-lg font-bold text-gray-900"
+                        <!-- Trust Badge -->
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-400/20 mb-6"
                         >
-                            Egusi Soup
-                        </h3>
+                            <span
+                                class="w-2 h-2 rounded-full bg-orange-500"
+                            ></span>
 
-                        <!-- Description -->
+                            <span
+                                class="text-orange-200 text-sm font-medium"
+                            >
+                                Delivering Across Enugu Metropolis
+                            </span>
+                        </div>
 
+                        <!-- Headline -->
+                        <h1
+                            id="hero-heading"
+                            class="text-white font-black leading-tight text-4xl sm:text-5xl lg:text-6xl"
+                        >
+                            Real Nigerian Meals,
+                            <span class="text-orange-400">
+                                Delivered Hot
+                            </span>
+                            To Your Doorstep.
+                        </h1>
+
+                        <!-- Supporting Text -->
                         <p
-                            class="mt-2 text-sm text-gray-500 leading-relaxed"
+                            class="mt-6 text-lg text-red-100 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                         >
-                            Rich melon seed soup prepared with spinach,
-                            stockfish, assorted meat and traditional spices.
+                            Skip the cooking, avoid the queues, and enjoy authentic
+                            home-cooked Nigerian favorites. From rich Egusi and
+                            Edikaikong to delicious Jollof Rice, Nkwobi and Grilled
+                            Fish, MamaPutOnline delivers comfort food wherever you are
+                            in Enugu.
                         </p>
 
-                        <!-- Rating + Delivery -->
-
+                        <!-- Benefits -->
                         <div
-                            class="flex items-center justify-between mt-4"
+                            class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start"
                         >
 
-                            <div
-                                class="flex items-center gap-1"
+                            <span
+                                class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
                             >
-                                <span class="text-orange-500">★★★★★</span>
+                                Fast Delivery
+                            </span>
 
-                                <span
-                                    class="text-xs text-gray-500"
-                                >
-                                    (124)
-                                </span>
+                            <span
+                                class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
+                            >
+                                Freshly Prepared
+                            </span>
+
+                            <span
+                                class="px-4 py-2 rounded-full bg-white/10 text-white text-sm backdrop-blur-md"
+                            >
+                                Affordable Meals
+                            </span>
+
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div
+                            class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                        >
+
+                            <!-- Primary CTA -->
+                            <a
+                                href="#menu"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-2xl shadow-2xl shadow-orange-900/40 transition-all duration-300 hover:-translate-y-1"
+                            >
+                                Order Food Now
+                            </a>
+
+                            <!-- Secondary CTA -->
+                            <a
+                                href="#categories" 
+                                class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-white font-semibold rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                            >
+                                Browse Menu
+                            </a>
+
+                        </div>
+
+                        <!-- Social Proof -->
+                        <div
+                            class="mt-8 flex flex-wrap items-center gap-6 justify-center lg:justify-start"
+                        >
+
+                            <div>
+                                <p class="text-2xl font-bold text-white">
+                                    500+
+                                </p>
+                                <p class="text-sm text-red-200">
+                                    Happy Customers
+                                </p>
                             </div>
 
-                            <span
-                                class="text-xs text-gray-500"
-                            >
-                                25-35 mins
-                            </span>
-
-                        </div>
-
-                        <!-- Price -->
-
-                        <div
-                            class="flex items-end gap-3 mt-5"
-                        >
-
-                            <span
-                                class="text-sm text-gray-400 line-through"
-                            >
-                                ₦6,500
-                            </span>
-
-                            <span
-                                class="text-2xl font-black text-red-900"
-                            >
-                                ₦5,200
-                            </span>
-
-                        </div>
-
-                        <!-- Quantity Selector -->
-
-                        <div
-                            class="flex items-center justify-between mt-5"
-                        >
-
-                            <div
-                                class="flex items-center border border-orange-200 rounded-xl overflow-hidden"
-                            >
-
-                                <button
-                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
-                                >
-                                    −
-                                </button>
-
-                                <span
-                                    class="w-10 text-center font-semibold"
-                                >
-                                    1
-                                </span>
-
-                                <button
-                                    class="w-10 h-10 flex items-center justify-center hover:bg-orange-50 transition"
-                                >
-                                    +
-                                </button>
-
+                            <div>
+                                <p class="text-2xl font-bold text-white">
+                                    15+
+                                </p>
+                                <p class="text-sm text-red-200">
+                                    Local Dishes
+                                </p>
                             </div>
 
-                            <span
-                                class="text-xs text-green-600 font-semibold"
-                            >
-                                In Stock
-                            </span>
+                            <div>
+                                <p class="text-2xl font-bold text-white">
+                                    4.9★
+                                </p>
+                                <p class="text-sm text-red-200">
+                                    Customer Rating
+                                </p>
+                            </div>
 
                         </div>
-
-                        <!-- CTA -->
-
-                        <button
-                            class="w-full mt-5 bg-red-900 hover:bg-red-800 text-white font-semibold py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
-                            Add To Cart
-                        </button>
-
-                    </div>
-                    
-
-                    </article>
-
-                    <!-- ===================================================== -->
-
-                    <!-- SOUPS CATEGORY -->
-
-                    <!-- 7 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section id="soups">
-
-                    
-                    <h2 class="text-3xl font-black text-red-900 mb-8">
-                        Soups
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Duplicate Product Card For -->
-
-                        <!-- Egusi Soup -->
-                        <!-- Ewedu Soup -->
-                        <!-- Ora Soup -->
-                        <!-- Edikaikong Soup -->
-                        <!-- Okazi Soup -->
-                        <!-- Ogbono Soup -->
-                        <!-- Okro Soup -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- LOCAL DELICACIES -->
-
-                    <!-- 8 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="local-delicacies"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        Local Delicacies
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Jollof Rice -->
-                        <!-- Fried Rice -->
-                        <!-- Noodles -->
-                        <!-- Yam Porridge -->
-                        <!-- Beans Porridge -->
-                        <!-- Fried Plantain -->
-                        <!-- Abacha -->
-                        <!-- Fufu Combo -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- PROTEINS -->
-
-                    <!-- 8 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="proteins"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        Proteins
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Nkwobi -->
-                        <!-- Fried Chicken -->
-                        <!-- Kpomo -->
-                        <!-- Grilled Fish -->
-                        <!-- Bush Meat Pepper Soup -->
-                        <!-- Goat Meat Pepper Soup -->
-                        <!-- Chicken Pepper Soup -->
-                        <!-- Beef Pepper Soup -->
-
-                    </div>
-                    
-
-                    </section>
-
-                    <!-- ===================================================== -->
-
-                    <!-- HOUSE SPECIALS -->
-
-                    <!-- 4 Products -->
-
-                    <!-- ===================================================== -->
-
-                    <section
-                        id="specials"
-                        class="mt-24"
-                    >
-
-                    
-                    <h2
-                        class="text-3xl font-black text-red-900 mb-8"
-                    >
-                        House Specials
-                    </h2>
-
-                    <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"
-                    >
-
-                        <!-- Fisherman's Soup -->
-                        <!-- Native Rice -->
-                        <!-- Isi Ewu -->
-                        <!-- Assorted Meat Platter -->
-
-                    </div>
-                    
-
-                    </section>
-
-                </div>
-
-            </div>
-
-        </div>
-        
-
-        </section>
-
-
-
-
-        <!-- ===================================================== -->
-        <!-- HERO SECTION -->
-        <!-- ===================================================== -->
-        <section
-            class="h-screen bg-gradient-to-br from-red-900 via-red-800 to-orange-700"
-            aria-label="Hero Section"
-        >
-        </section>
-
-        <!-- ===================================================== -->
-        <!-- STICKY MAIN MENU SECTION -->
-        <!-- ===================================================== -->
-        <section
-            class="sticky top-20 z-40 bg-white border-b border-orange-100"
-            aria-label="Main Menu"
-        >
-
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-            >
-
-                <!-- Skeleton Loading -->
-                <div class="animate-pulse">
-
-                    <div
-                        class="h-10 w-64 bg-orange-100 rounded-xl mb-6"
-                    ></div>
-
-                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
-                        <div class="h-24 rounded-2xl bg-orange-100"></div>
 
                     </div>
 
@@ -875,36 +296,2033 @@
             </div>
 
         </section>
-
         <!-- ===================================================== -->
         <!-- FEATURED CATEGORIES -->
         <!-- ===================================================== -->
-        <section
-            class="min-h-screen bg-orange-50"
-            aria-label="Featured Categories"
-        >
 
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
-            >
+        <section id="categories" class="bg-white py-20 scroll-mt-24" aria-label="Featured Categories">
 
-                <!-- Skeleton Layout -->
-                <div class="animate-pulse">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <div
-                        class="h-12 w-72 bg-orange-100 rounded-xl mb-12"
-                    ></div>
+                <!-- Section Heading -->
 
-                    <div
-                        class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                <div class="text-center max-w-2xl mx-auto">
+
+                    <span
+                        class="inline-flex px-4 py-2 rounded-full bg-orange-100 text-orange-700 font-semibold text-sm"
+                    >
+                        Popular Categories
+                    </span>
+
+                    <h2
+                        class="mt-5 text-4xl font-black text-red-900"
+                    >
+                        Find Your Favourite Nigerian Meal
+                    </h2>
+
+                    <p
+                        class="mt-4 text-gray-500"
+                    >
+                        Freshly prepared every day using quality ingredients and delivered hot to your doorstep.
+                    </p>
+
+                </div>
+
+                <!-- Category Cards -->
+
+                <div
+                    class="hidden lg:grid md:grid-cols-3 lg:grid-cols-5 gap-6 mt-14"
+                >
+
+                    <!-- Soups -->
+
+                    <a
+                        href="#soups"
+                        class="group bg-orange-50 rounded-[2rem] p-6 text-center border border-orange-100 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
                     >
 
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
-                        <div class="h-96 bg-white rounded-3xl shadow-xl"></div>
+                        <div
+                            class="animate-pulse bg-orange-100 rounded-2xl overflow-hidden"
+                        >
+
+                            <img
+                                src="images/category-soups.webp"
+                                alt="Soups"
+                                loading="lazy"
+                                class="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
+                            >
+
+                        </div>
+
+                        <h3
+                            class="mt-5 text-xl font-bold text-red-900"
+                        >
+                            Soups
+                        </h3>
+
+                        <p
+                            class="mt-2 text-sm text-gray-500"
+                        >
+                            Egusi, Ora, Ogbono, Okazi & more.
+                        </p>
+
+                    </a>
+
+                    <!-- Swallows -->
+
+                    <a
+                        href="#swallow"
+                        class="group bg-orange-50 rounded-[2rem] p-6 text-center border border-orange-100 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                    >
+
+                        <div
+                            class="animate-pulse bg-orange-100 rounded-2xl overflow-hidden"
+                        >
+
+                            <img
+                                src="images/category-soups.webp"
+                                alt="Swallows"
+                                loading="lazy"
+                                class="w-full h-40 object-cover group-hover:scale-105 transition duration-500"
+                            >
+
+                        </div>
+
+                        <h3
+                            class="mt-5 text-xl font-bold text-red-900"
+                        >
+                            Swallows
+                        </h3>
+
+                        <p
+                            class="mt-2 text-sm text-gray-500"
+                        >
+                            Amala, Semo Fufu & more.
+                        </p>
+
+                    </a>
+
+                    <!-- Local Delicacies -->
+
+                    <a
+                        href="#local-delicacies"
+                        class="group bg-orange-50 rounded-[2rem] p-6 text-center border border-orange-100 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                    >
+
+                        <img
+                            src="images/category-rice.webp"
+                            loading="lazy"
+                            class="w-full h-40 object-cover rounded-2xl group-hover:scale-105 transition"
+                        >
+
+                        <h3 class="mt-5 text-xl font-bold text-red-900">
+                            Local Delicacies
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Rice, Abacha, Yam Porridge and more.
+                        </p>
+
+                    </a>
+
+                    <!-- Proteins -->
+
+                    <a
+                        href="#proteins"
+                        class="group bg-orange-50 rounded-[2rem] p-6 text-center border border-orange-100 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                    >
+
+                        <img
+                            src="images/category-protein.webp"
+                            loading="lazy"
+                            class="w-full h-40 object-cover rounded-2xl group-hover:scale-105 transition"
+                        >
+
+                        <h3 class="mt-5 text-xl font-bold text-red-900">
+                            Proteins
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Chicken, Fish, Nkwobi & Pepper Soup.
+                        </p>
+
+                    </a>
+
+                    <!-- Specials -->
+
+                    <a
+                        href="#specials"
+                        class="group bg-orange-50 rounded-[2rem] p-6 text-center border border-orange-100 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                    >
+
+                        <img
+                            src="images/category-specials.webp"
+                            loading="lazy"
+                            class="w-full h-40 object-cover rounded-2xl group-hover:scale-105 transition"
+                        >
+
+                        <h3 class="mt-5 text-xl font-bold text-red-900">
+                            House Specials
+                        </h3>
+
+                        <p class="mt-2 text-sm text-gray-500">
+                            Signature dishes prepared by Our Madam.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- MAIN MENU SECTION  -->
+        <!-- ===================================================== -->
+
+        <section id="menu" class="relative bg-orange-50 scroll-auto">
+
+            <!-- ===================================================== -->
+            <!-- MOBILE CATEGORY BAR -->
+            <!-- ===================================================== -->
+
+            <div id="categories" class="lg:hidden sticky top-20 z-40 bg-white/95 backdrop-blur-xl border-b border-orange-100 shadow-lg">
+                <div class="flex gap-3 overflow-x-auto px-4 py-4">
+
+                    <a href="#soups" class="px-5 py-2 rounded-full bg-white hover:bg-red-900 hover:text-white text-sm border">
+                        Soups
+                    </a>
+
+                    <a href="#swallow" class="px-5 py-2 rounded-full bg-white hover:bg-red-900 hover:text-white text-sm border">
+                        Swallows
+                    </a>
+
+                    <a href="#delicacies" class="min-w-36 px-5 py-2 rounded-full bg-white hover:bg-red-900 hover:text-white text-sm border">
+                        Local Delicacies
+                    </a>
+
+                    <a href="#proteins" class="px-5 py-2 rounded-full bg-white hover:bg-red-900 hover:text-white text-sm border">
+                        Proteins
+                    </a>
+
+                    <a href="#specials" class="min-w-36 px-5 py-2 rounded-full bg-white hover:bg-red-900 hover:text-white text-sm border">
+                        House Specials
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- ===================================================== -->
+            <!-- LAYOUT -->
+            <!-- ===================================================== -->
+
+            <div class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+
+                <div class="grid lg:grid-cols-5 gap-8">
+
+                    <!-- ===================================================== -->
+                    <!-- SIDEBAR -->
+                    <!-- ===================================================== -->
+
+                    <aside class="hidden lg:block lg:col-span-1">
+                        <div class="sticky top-28 bg-white rounded-3xl p-6 shadow-xl">
+                            <h2 class="text-xl font-black text-red-900 mb-6">Menu</h2>
+                            <nav class="space-y-2 text-sm">
+                                <a href="#soups" class="block p-3 rounded-xl hover:text-white hover:bg-red-900">Soups</a>
+                                <a href="#swallow" class="block p-3 rounded-xl hover:text-white hover:bg-red-900">Swallows</a>
+                                <a href="#delicacies" class="block p-3 rounded-xl hover:text-white hover:bg-red-900">Local Delicacies</a>
+                                <a href="#proteins" class="block p-3 rounded-xl hover:text-white hover:bg-red-900">Proteins</a>
+                                <a href="#specials" class="block p-3 rounded-xl hover:text-white hover:bg-red-900">House Specials</a>
+                            </nav>
+                        </div>
+                    </aside>
+
+                    <!-- ===================================================== -->
+                    <!-- PRODUCT AREA -->
+                    <!-- ===================================================== -->
+
+                    <div class="lg:col-span-4 space-y-24">
+
+<!-- https://media.istockphoto.com/id/498310978/photo/egusi-soup-and-pounded-yam-nigerian-cuisine.jpg?s=2048x2048&w=is&k=20&c=QfkkYg2kzvBGir0BCFWwuIAhUFsVAoabX3h3ch4qaes= -->
+                        
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: SOUPS -->
+                        <!-- ===================================================== -->
+
+                        <section id="soups" class=" scroll-mt-24">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
+                                Soups
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6">
+
+                                <!-- EGUSI CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Melon seeds, spinach, dry fish, stockfish & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+
+                                <!-- BITTER LEAF CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Bitter Leaf Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                           Fresh bitter leaves, fresh fish, kpomo & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- OGBONO CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Ogbono Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                           Ogbono seeds, oziza leaves, stockfish, dry fish & goat meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- OKRO CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Okro Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                           Okra, oziza leaves, stockfish, dry fish, kpomo & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- EWEDU CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Ewedu Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Ewedu leaves, tomato sauce, Kpomo & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- EDIKAIKONG CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Edikaikong Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Ogwu leaves, perriwinkles, stockfish, dryfish, kpomo & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- ORA CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Ora leaves, cocoyam thickener, stockfish & goat meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <!-- OKAZI CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Okazi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Okazi leaves, perriwinkles, stockfish, kpomo & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦2,000</span>
+                                            <p class="font-black text-red-900">₦1,600</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: SWALLOWS -->
+                        <!-- ===================================================== -->
+
+                        <section id="swallow" class=" scroll-mt-24">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
+                                Swallows
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6">
+
+                                
+                                <!-- TUWON CHINKAFA CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Tuwon Chinkafa </h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Rice.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- AMALA CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Amala </h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Amala/Yam flour.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- SEMO CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Semo </h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Semovita Flour.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- AKPU CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Apku/Fufu </h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Specially prepared cassava starch.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- EBA CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Eba </h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Garri (milled & fried cassava).
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: LOCAL DELICACIES -->
+                        <!-- ===================================================== -->
+
+                        <section id="delicacies" class=" scroll-mt-24">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
+                                Our Local Delicacies
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6">
+
+                                <!-- JOLLOF RICE CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Jollof Rice</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Rice, tomatoes, spices, Chicken stock.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- FRIED RICE CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Fried Rice</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Rice, tomatoes, spices, carrots, green beans, Chicken stock.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- YAM PORRIDGE CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Yam Porridge</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Yam, spinach, spices, dried fish.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- BEANS PORRIDGE CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Beans Porridge</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Beans, onions, fried fish.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- PLANTAIN PORRIDGE CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Plantain Porridge</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Plantain, spices, dried fish, .
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- ABACHA CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Abacha</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Abacha, abacha sauce, vegetables, dried fish.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦1,000</span>
+                                            <p class="font-black text-red-900">₦800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: PROTEINS -->
+                        <!-- ===================================================== -->
+
+                        <section id="proteins" class=" scroll-mt-24">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
+                                Proteins
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6">
+
+
+                                <!-- FRIED CHICKEN CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Fried Chicken</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Deep-fried tender chicken.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- NKWOBI CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Nkwobi</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Well-cooked and seasoned goat meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- GRILLED FISH CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Grilled Fish</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Matured catfish, proper seasoning.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- KPOMO CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Shaki/Kpomo</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Cow leg & skin made with tomato sauce.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- FRIED TURKEY CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Fried Turkey</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Savoury fried Turkey.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- CATFISH PEPPERSOUP CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Catfish Peppersoup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Spicy peppersoup made from mature catfish.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- GOAT MEAT PEPPERSOUP CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Goat Peppersoup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Spicy peppersoup made from goat meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- BEEF PEPPERSOUP CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Beef Peppersoup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Spicy peppersoup made from beef.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+                                            <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                            <p class="font-black text-red-900">₦4,800</p>
+                                        </div>
+                                        
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <!-- QUANTITY -->
+                                            <div class="flex items-center border rounded-xl">
+                                                <button class="px-3 py-2">-</button>
+                                                <span class="px-4">1</span>
+                                                <button class="px-3 py-2">+</button>
+                                            </div>
+                                            
+                                            <!-- CTA -->
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- ===================================================== -->
+                        <!-- CATEGORY: SPECIALS -->
+                        <!-- ===================================================== -->
+
+                        <section id="specials" class=" scroll-mt-24">
+
+                            <h2 class="text-3xl font-black text-red-900 mb-6">
+                                House Specials
+                            </h2>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6">
+
+                                <!-- Fisherman's Soup -->
+                                <!-- Native Rice -->
+                                <!-- Isi Ewu -->
+                                <!-- Assorted Meat Platter -->
+
+                                <!-- PRODUCT CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Melon seeds, spinach, stockfish & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <div>
+                                                <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                                <p class="font-black text-red-900">₦4,800</p>
+                                            </div>
+
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- PRODUCT CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Melon seeds, spinach, stockfish & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <div>
+                                                <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                                <p class="font-black text-red-900">₦4,800</p>
+                                            </div>
+
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- PRODUCT CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Melon seeds, spinach, stockfish & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <div>
+                                                <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                                <p class="font-black text-red-900">₦4,800</p>
+                                            </div>
+
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <!-- PRODUCT CARD -->   
+                                <article class="group bg-white rounded-[28px] overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+                                    <div class="relative">
+
+                                        <img
+                                            src=""
+                                            class="h-56 w-full object-cover group-hover:scale-125 transition"
+                                            loading="lazy"
+                                            alt="mamaputonline "
+                                        />
+
+                                        <span class="absolute top-4 left-4 bg-warmorange text-white text-xs px-3 py-1 rounded-full">
+                                            -20%
+                                        </span>
+
+                                    </div>
+
+                                    <div class="p-5">
+
+                                        <h3 class="font-bold text-lg">Egusi Soup</h3>
+
+                                        <p class="text-sm text-lightgray mt-2">
+                                            Melon seeds, spinach, stockfish & assorted meat.
+                                        </p>
+
+                                        <div class="flex justify-between items-center mt-4">
+
+                                            <div>
+                                                <span class="line-through text-gray-400 text-sm">₦6,000</span>
+                                                <p class="font-black text-red-900">₦4,800</p>
+                                            </div>
+
+                                            <button class="bg-red-900 text-white px-4 py-2 rounded-xl">
+                                                <a href="http://">Add</a>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- WHY CHOOSE US -->
+        <!-- ===================================================== -->
+
+        <section id="why-us" class="bg-orange-50 py-20 scroll-auto">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- ===================================================== -->
+                <!-- Section Heading -->
+                <!-- ===================================================== -->
+
+                <div class="max-w-3xl mx-auto text-center">
+
+                    <span
+                        class="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold"
+                    >
+                        Why Thousands Choose MamaPutOnline
+                    </span>
+
+                    <h2
+                        class="mt-5 text-4xl lg:text-5xl font-black text-red-900"
+                    >
+                        Home-Cooked Nigerian Meals,
+                        <span class="text-orange-600">Whenever You Want.</span>
+                    </h2>
+
+                    <p
+                        class="mt-5 text-lg text-gray-600 leading-relaxed"
+                    >
+                        Whether you're a tourist, busy professional, student, parent or simply
+                        craving authentic Nigerian food, we make enjoying delicious
+                        homemade meals effortless.
+                    </p>
+
+                </div>
+
+                <!-- ===================================================== -->
+                <!-- Benefits Grid -->
+                <!-- ===================================================== -->
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 mt-16"
+                >
+
+                    <!-- CARD 1 -->
+
+                    <article
+                        class="group bg-white rounded-[2rem] p-8 border border-orange-100 shadow-lg shadow-red-900/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500  "
+                    >
+
+                        <div
+                            class="w-20 h-20 rounded-3xl bg-orange-100 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300"
+                        >
+                            
+                        </div>
+
+                        <h3
+                            class="mt-6 text-2xl font-bold text-red-900"
+                        >
+                            Freshly Cooked Daily
+                        </h3>
+
+                        <p
+                            class="mt-4 text-gray-500 leading-relaxed"
+                        >
+                            Every meal is freshly prepared using quality ingredients,
+                            traditional recipes and authentic Nigerian flavours.
+                        </p>
+
+                    </article>
+
+                    <!-- CARD 2 -->
+
+                    <article
+                        class="group bg-white rounded-[2rem] p-8 border border-orange-100 shadow-lg shadow-red-900/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
+                    >
+
+                        <div
+                            class="w-20 h-20 rounded-3xl bg-orange-100 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300"
+                        >
+                            🚚
+                        </div>
+
+                        <h3
+                            class="mt-6 text-2xl font-bold text-red-900"
+                        >
+                            Fast Delivery
+                        </h3>
+
+                        <p
+                            class="mt-4 text-gray-500 leading-relaxed"
+                        >
+                            Hot meals delivered quickly throughout Enugu Metropolis,
+                            carefully packaged to arrive fresh and delicious.
+                        </p>
+
+                    </article>
+
+                    <!-- CARD 3 -->
+
+                    <article
+                        class="group bg-white rounded-[2rem] p-8 border border-orange-100 shadow-lg shadow-red-900/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
+                    >
+
+                        <div
+                            class="w-20 h-20 rounded-3xl bg-orange-100 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300"
+                        >
+                            ❤️
+                        </div>
+
+                        <h3
+                            class="mt-6 text-2xl font-bold text-red-900"
+                        >
+                            Authentic Home Taste
+                        </h3>
+
+                        <p
+                            class="mt-4 text-gray-500 leading-relaxed"
+                        >
+                            Rich soups, local delicacies and signature dishes prepared
+                            with the same love and care as a family kitchen.
+                        </p>
+
+                    </article>
+
+                    <!-- CARD 4 -->
+
+                    <article
+                        class="group bg-white rounded-[2rem] p-8 border border-orange-100 shadow-lg shadow-red-900/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
+                    >
+
+                        <div
+                            class="w-20 h-20 rounded-3xl bg-orange-100 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-300"
+                        >
+                            ⭐
+                        </div>
+
+                        <h3
+                            class="mt-6 text-2xl font-bold text-red-900"
+                        >
+                            Loved By Customers
+                        </h3>
+
+                        <p
+                            class="mt-4 text-gray-500 leading-relaxed"
+                        >
+                            Hundreds of satisfied customers trust MamaPutOnline for
+                            delicious meals, excellent service and reliable delivery.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <!-- ===================================================== -->
+                <!-- Bottom Trust Banner -->
+                <!-- ===================================================== -->
+
+                <div
+                    class="mt-16 bg-gradient-to-r from-red-900 via-red-800 to-red-900 rounded-[2.5rem] p-8 lg:p-10 shadow-2xl"
+                >
+
+                    <div
+                        class="flex flex-col lg:flex-row items-center justify-between gap-8"
+                    >
+
+                        <!-- Left -->
+
+                        <div>
+
+                            <h3
+                                class="text-3xl font-black text-white"
+                            >
+                                Delicious Meals, Ready When You Are.
+                            </h3>
+
+                            <p
+                                class="mt-4 text-red-100 max-w-2xl"
+                            >
+                                No shopping, no cooking, no washing dishes. Simply order,
+                                relax and enjoy authentic Nigerian meals delivered
+                                straight to your doorstep.
+                            </p>
+
+                        </div>
+
+                        <!-- Right -->
+
+                        <div
+                            class="flex flex-col sm:flex-row gap-4"
+                        >
+
+                            <a
+                                href="#menu"
+                                class="inline-flex justify-center items-center px-8 py-4 rounded-2xl bg-orange-600 hover:bg-orange-500 text-white font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1"
+                            >
+                                🍛 Order Now
+                            </a>
+
+                            <a
+                                href="#reviews"
+                                class="inline-flex justify-center items-center px-8 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold hover:bg-white/20 transition-all duration-300"
+                            >
+                                ⭐ Read Reviews
+                            </a>
+
+                        </div>
 
                     </div>
 
@@ -917,38 +2335,203 @@
         <!-- ===================================================== -->
         <!-- TESTIMONIALS -->
         <!-- ===================================================== -->
-        <section
-            class="min-h-screen bg-white"
-            aria-label="Testimonials"
-        >
 
-            <div
-                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
-            >
+        <section id="reviews" class="bg-orange-50 py-20 scroll-mt-24">
 
-                <div class="animate-pulse">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <div
-                        class="h-12 w-64 bg-orange-100 rounded-xl mb-16"
-                    ></div>
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="text-4xl font-black text-red-900">Loved By Families Across Enugu</h2>
+                </div>
 
-                    <div
-                        class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                <!-- Our Madam -->
+                <div class="mt-14 bg-white rounded-[2rem] p-8 shadow-xl flex flex-col lg:flex-row items-center gap-8">
+                    <img
+                        src="images/our-madam.webp"
+                        alt="MamaPutOnline Madam"
+                        loading="lazy"
+                        class="w-36 h-36 rounded-full object-cover border-4 border-orange-500 shadow-lg"
                     >
+                    <div>
 
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
+                        <p
+                            class="text-2xl italic font-medium text-gray-700"
+                        >
+                            “Every meal we prepare is cooked exactly the way we'd proudly serve our own family. Fresh ingredients, authentic recipes, and plenty of love.”
+                        </p>
 
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
-
-                        <div
-                            class="h-72 rounded-3xl bg-orange-50 shadow-xl"
-                        ></div>
+                        <h3
+                            class="mt-5 text-xl font-bold text-red-900"
+                        >
+                            — Our Madam
+                        </h3>
 
                     </div>
+
+                </div>
+
+                <!-- Customer Reviews -->
+
+                <div
+                    class="grid md:grid-cols-3 gap-8 mt-14"
+                >
+
+                    <!-- CARD -->
+
+                    <article
+                        class="bg-white rounded-[2rem] p-6 shadow-lg hover:shadow-xl transition"
+                    >
+
+                        <img
+                            src="images/customer1.webp"
+                            loading="lazy"
+                            class="w-16 h-16 rounded-full border-4 border-orange-500 object-cover"
+                        >
+
+                        <h3
+                            class="mt-4 font-bold text-red-900"
+                        >
+                            Chiamaka O.
+                        </h3>
+
+                        <p
+                            class="mt-3 text-gray-500 text-sm"
+                        >
+                            The Egusi tasted exactly like home. Delivery was quick and the food arrived hot.
+                        </p>
+
+                        <div class="mt-4 text-orange-500">
+                            ★★★★★
+                        </div>
+
+                    </article>
+
+                    <!-- CARD -->
+
+                    <article
+                        class="bg-white rounded-[2rem] p-6 shadow-lg hover:shadow-xl transition"
+                    >
+
+                        <img
+                            src="images/customer2.webp"
+                            loading="lazy"
+                            class="w-16 h-16 rounded-full border-4 border-orange-500 object-cover"
+                        >
+
+                        <h3 class="mt-4 font-bold text-red-900">
+                            David E.
+                        </h3>
+
+                        <p class="mt-3 text-gray-500 text-sm">
+                            Their Native Rice and Grilled Fish are absolutely amazing.
+                        </p>
+
+                        <div class="mt-4 text-orange-500">
+                            ★★★★★
+                        </div>
+
+                    </article>
+
+                    <!-- CARD -->
+
+                    <article
+                        class="bg-white rounded-[2rem] p-6 shadow-lg hover:shadow-xl transition"
+                    >
+
+                        <img
+                            src="images/customer3.webp"
+                            loading="lazy"
+                            class="w-16 h-16 rounded-full border-4 border-orange-500 object-cover"
+                        >
+
+                        <h3 class="mt-4 font-bold text-red-900">
+                            Esther N.
+                        </h3>
+
+                        <p class="mt-3 text-gray-500 text-sm">
+                            Perfect for busy workdays. Ordering is easy and the meals never disappoint.
+                        </p>
+
+                        <div class="mt-4 text-orange-500">
+                            ★★★★★
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- CONTACT -->
+        <!-- ===================================================== -->
+
+        <section id="contact" class="bg-white py-20 scroll-mt-24">
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div
+                    class="bg-gradient-to-br from-red-900 to-red-800 rounded-[2.5rem] p-10 text-center shadow-2xl"
+                >
+
+                    <h2
+                        class="text-4xl font-black text-white"
+                    >
+                        Ready For Your Next Meal?
+                    </h2>
+
+                    <p
+                        class="mt-5 text-red-100 max-w-xl mx-auto"
+                    >
+                        Order your favourite Nigerian dishes today and enjoy fast, fresh delivery anywhere within Enugu Metropolis.
+                    </p>
+
+                    <div
+                        class="mt-10 grid md:grid-cols-3 gap-6 text-white"
+                    >
+
+                        <div>
+                            <h3 class="font-bold">
+                                📍 Address
+                            </h3>
+
+                            <p class="text-red-100 mt-2">
+                                Enugu Metropolis
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold">
+                                📞 Phone
+                            </h3>
+
+                            <p class="text-red-100 mt-2">
+                                +234 XXX XXX XXXX
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold">
+                                ✉ Email
+                            </h3>
+
+                            <p class="text-red-100 mt-2">
+                                hello@mamaputonline.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="#menu"
+                        class="inline-flex mt-10 px-10 py-4 bg-orange-600 hover:bg-orange-500 rounded-2xl text-white font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    >
+                        Order Now
+                    </a>
 
                 </div>
 
@@ -962,7 +2545,7 @@
     <!-- STICKY FOOTER -->
     <!-- ===================================================== -->
     <footer
-        class="sticky bottom-0 bg-red-900 text-white border-t border-red-800 shadow-2xl"
+        class="xl:sticky z-100 bottom-0 bg-red-900 text-white border-t border-red-800 shadow-2xl"
     >
 
         <div
@@ -986,17 +2569,24 @@
                         <h3 class="font-bold">
                             MamaPutOnline
                         </h3>
-                        <p class="text-sm text-orange-200">
-                            Fresh Nigerian Meals Delivered Daily
+                        <p class="text-sm text-cream">
+                            ...Delivering Joy - Everyday.
                         </p>
                     </div>
 
                 </div>
 
-                <!-- Contact -->
-                <div class="text-center">
+                <!-- Contact - Mobile only -->
+                <div class="text-center md:hidden lg:hidden">
                     <p>Enugu Metropolis, Nigeria</p>
-                    <p>+234 XXX XXX XXXX</p>
+                    <p>+234 815 976 2789</p>
+                    <p>hello@mamaputonline.com</p>
+                </div>
+                
+                <!-- Contact - Desktop only -->
+                <div class="hidden text-center lg:flex lg:gap-2">
+                    <p>Enugu Metropolis, Nigeria <span class="text-orange-500"> |</span></p>
+                    <p>+234 815 976 2789 <span class="text-orange-500"> |</span></p>
                     <p>hello@mamaputonline.com</p>
                 </div>
 
@@ -1022,9 +2612,9 @@
 
             </div>
 
-            <div class="mt-6 text-center border-t border-red-800 pt-4">
+            <div class="mt-2 text-center border-t border-red-800 pt-2">
 
-                <small class="text-orange-200">
+                <small class="text-cream">
                     © 2026 MamaPutOnline. All Rights Reserved.
                 </small>
 
