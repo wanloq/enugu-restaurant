@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-navyblue:   #051125;
+    --color-warmorange:   #d8521e;
+    --color-skyblue:   #1e6be6; 
+    --color-lightgray:   #778d7d;
+    --color-cream:   #d4d4b6;
+}
+
+/* @apply {
+    --product-card
+} */
